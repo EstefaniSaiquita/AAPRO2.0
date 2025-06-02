@@ -1,10 +1,10 @@
 # javaScript
 ##Metodos
 
-.push()
+.push() | add elements in the end of the array |
+|-|
+ .pop()
 |-
- .pop() 
--
  .shift() |
--
+|-
  .unshift() |
