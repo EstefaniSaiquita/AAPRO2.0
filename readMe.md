@@ -1,10 +1,10 @@
 # javaScript
 ##Metodos
 
-| .push() |
+.push()
+|-
+ .pop() 
 -
-| .pop() 
+ .shift() |
 -
-| .shift() |
--
-| .unshift() |
+ .unshift() |
