@@ -1,7 +1,7 @@
 # javaScript
 ##Metodos
 
-.push() | add elements in the end of the array |
+.push() |-add elements in the end of the array |-
 |-|
  .pop()
 |-
