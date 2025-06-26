@@ -5,8 +5,10 @@ function App() {
 
   return (
 <>
-    <h1>Noticias Musicales (づ￣ 3￣)づ</h1>
-    <div className='card-container'>
+<div className='header'>
+<h1 >Noticias Musicales (づ￣ 3￣)づ</h1>
+</div>
+  <div className='card-container'>
     {NewsData.map((noticia) => (
     <NuevaCard
       key={noticia.id}
