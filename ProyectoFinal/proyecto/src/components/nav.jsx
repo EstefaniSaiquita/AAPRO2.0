@@ -1,4 +1,12 @@
 export const Nav = ({children}) => {
+    // function toogleNav ({actualSection, setActualSection}){
+    //     const navTitulo = [
+    //         {id: 'inicio', label: 'Inicio'},
+    //         {id:'producto', label:'producto'},
+    //         {id:'contacto', label:'Contacto'},
+    //     ]
+    // }
+
     return (
     <div className='navbar'>
         <div className='nav-izq'>

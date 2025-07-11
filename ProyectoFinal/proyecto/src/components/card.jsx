@@ -1,11 +1,13 @@
-export const NuevaCard = ({titulo, imagen, descripcion}) => {
+import { Children } from "react";
+
+export const NuevaCard = ({titulo, imagen, precio}) => {
     return (
     <div className="card">
         <div>
-        <h2>{titulo}</h2>
         <img src={imagen ? imagen : 'https://placehold.co/200/png'} alt="{titulo} " />
-        <p>{descripcion} </p>
-        <button className="boton">Ver más</button>
+        <h2>{titulo}</h2>
+        <p>{precio}</p>
+        <button className="boton">Comprar</button>
         </div>
     </div>
     );

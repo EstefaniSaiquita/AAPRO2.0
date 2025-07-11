@@ -1,13 +1,10 @@
+import React, { useState, useEffect } from 'react';
 import './App.css'
 import { Nav } from './components/nav';
 import { NuevaCard } from './components/card';
 import { CardList } from './components/cardList'
 import { Footer } from './components/footer';
 import Buscador  from './components/buscador';
-
-
-
-import React, { useState } from 'react';
 
 const App = () => {
   const [busqueda, setBusqueda] = useState('');
@@ -16,12 +13,17 @@ const App = () => {
     card.titulo.toLowerCase().includes(busqueda.toLowerCase())
   );
 
+//   //intento de localStorage
+// function guardarDatos(key, valorInicial) {
+  
+// }
+
   return (
     <div className='app-container'>
 
       <div className='nav-container'>
       <Nav>
-      <Buscador setBusqueda={setBusqueda} />        
+      <Buscador setBusqueda={setBusqueda}/>
       </Nav>
       </div>
 
@@ -34,13 +36,11 @@ const App = () => {
         <NuevaCard
           key={card.id}
           titulo={card.titulo}
-          descripcion={card.descripcion}
-          fuente={card.fuente}
+          precio={card.precio}
           imagen={card.imagen}
         />
       ))}
       </div>
-
       <Footer/> 
     </div>
   );
