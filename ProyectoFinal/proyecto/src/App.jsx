@@ -23,10 +23,10 @@ const App = () => {
       <Nav>
       <Buscador setBusqueda={setBusqueda}/>
       </Nav>
+      <Carrito/>
 
 
       </div>
-      <Carrito/>
 
 
       <div className='portada'>
