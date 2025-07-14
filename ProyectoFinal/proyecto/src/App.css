@@ -25,22 +25,34 @@ body {
   font-weight: bold;
   margin-right: -10px;
 }
-
-.navbar img {
-  width: 50px;
-  margin: 10px;
-}
 .navbar h2 {
   color: #884182;
   font-size: 30px;
   margin: 0;
+}
+.nav-izq img {
+  width: 50px;
+  margin: 10px;
 }
 .nav-izq {
   display: flex;
   align-items: center;
   margin: 0 0 0 10px;
 }
-
+.carrito-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.carrito-container img {
+  width: 35px;
+  margin-left: -30px;
+}
+.carrito-container button {
+  border-style: none;
+  border: #f7ebf6;
+  background-color: white;
+}
 .portada {
   display: flex;
   width: 100%;

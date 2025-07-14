@@ -1,11 +1,4 @@
 export const Nav = ({children}) => {
-    // function toogleNav ({actualSection, setActualSection}){
-    //     const navTitulo = [
-    //         {id: 'inicio', label: 'Inicio'},
-    //         {id:'producto', label:'producto'},
-    //         {id:'contacto', label:'Contacto'},
-    //     ]
-    // }
 
     return (
     <div className='navbar'>
@@ -19,6 +12,7 @@ export const Nav = ({children}) => {
                 <li>Productos</li>
                 <li>Contacto</li>
             </ul>
+       
             {children}
         </div>  
     </div>
