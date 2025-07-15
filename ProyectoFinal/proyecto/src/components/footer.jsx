@@ -7,6 +7,9 @@ export const Footer = () => {
             <li>instagram</li>
             <li>Santa fe, Argentina</li>
         </ul>
+        <div className="comentario">
+            <input type="text" />
+        </div>
     </div>
     )
 }

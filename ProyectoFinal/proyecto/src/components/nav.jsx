@@ -1,4 +1,4 @@
-export const Nav = ({children}) => {
+export const Nav = () => {
 
     return (
     <div className='navbar'>
@@ -13,7 +13,7 @@ export const Nav = ({children}) => {
                 <li>Contacto</li>
             </ul>
        
-            {children}
+            {/* {children} */}
         </div>  
     </div>
     )
