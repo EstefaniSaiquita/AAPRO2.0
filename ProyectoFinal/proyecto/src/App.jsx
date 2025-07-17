@@ -2,15 +2,17 @@ import React, { useState} from 'react';
 import './App.css'
 import { Nav } from './components/nav';
 import { NuevaCard } from './components/card';
-import { CardList } from './components/cardList'
+import { CardList as CardData} from './components/cardList'
 import { Footer } from './components/footer';
 import Buscador  from './components/buscador';
 import {Favoritos} from './components/favorito';
+import  {ProductoForm}  from './components/formulario';
 
 const App = () => {
   const [busqueda, setBusqueda] = useState('');
+  const [productos, setProductos] = useState(CardData);
 
-  const filtro = CardList.filter((card) =>
+  const filtro = productos.filter((card) =>
     card.producto.toLowerCase().includes(busqueda.toLowerCase())
   );
   
@@ -23,25 +25,32 @@ const App = () => {
     setfavoritos(nuevos)
   }
 
+  const agregarProducto = (nuevo) => {
+  const id = productos.length + 1;
+  setProductos([...productos, { ...nuevo, id }]);
+  // setProductos(nuevo);
+  // localStorage.setIten("productos", JSON.stringify(nuevo))
+  };
+  
+
   return (
     <div className='app-container'>
 
       <div className='nav-container'>
-      <Nav>
-      {/* <Buscador setBusqueda={setBusqueda}/> */}
-      </Nav>
-      
-      {/* <Favoritos favoritos={favoritos}/> */}
+      <Nav></Nav>
       </div>
 
-
-      <div className='portada'>
-      <img src="/portada.png" alt="" />
+      <div className='barra'>
+      <Favoritos favoritos={favoritos}/>
+      <Buscador setBusqueda={setBusqueda}/>
+      <ProductoForm agregarProducto={agregarProducto}/>
       </div>
 
       <main className='contenido'>
-      <Buscador setBusqueda={setBusqueda}/>
-      <Favoritos favoritos={favoritos}/>
+
+      {/* <div className='portada'>
+      <img src="/portada.png" alt="" />
+      </div> */}
 
       <div className='card-container'>
       {filtro.map((card) => (

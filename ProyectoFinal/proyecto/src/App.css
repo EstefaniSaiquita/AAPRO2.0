@@ -82,7 +82,7 @@ body {
   grid-template-columns: auto auto auto auto;
   gap: 20px;
   padding: 20px;
-  margin: 15px;
+  /* margin: 15px; */
 }
 .card img {
   width: 200px;
@@ -103,6 +103,11 @@ h2 {
   margin-right: 15px;
 }
 
+.barra {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
 .footer {
   background-color: #ebb1cc;
   display: flex;
@@ -116,4 +121,38 @@ h2 {
 .footer input {
   border-style: double;
   background-color: #ebb1cc;
+}
+
+.card button {
+  background-color: #ebb1e6;
+  border-radius: 20px;
+  border: none;
+  padding-inline: 20px;
+}
+
+.favoritos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 8px;
+  /* z-index: 10; */
+}
+
+.favoritos {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 8px;
+  /* z-index: 10; */
 }
