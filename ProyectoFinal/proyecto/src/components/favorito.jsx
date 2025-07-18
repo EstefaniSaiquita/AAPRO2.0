@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const Favoritos = ({favoritos}) => {
+export const Favoritos = ({favoritos, eliminarFavoritos}) => {
     const [visible, setVisible] = useState(false);
 
     return (
@@ -18,7 +18,9 @@ export const Favoritos = ({favoritos}) => {
                             <div key={index}>
                                 <h3>{item.producto}</h3>
                                 <p>${item.precio} dolares</p>
+                                <button onClick={()=> eliminarFavoritos(item)}>❌eliminar</button>
                             </div>
+                            
                         ))
                     )}
                 </div>

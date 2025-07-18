@@ -28,9 +28,9 @@ const App = () => {
   const agregarProducto = (nuevo) => {
   const id = productos.length + 1;
   setProductos([...productos, { ...nuevo, id }]);
-
   };
   
+
 
   return (
     <div className='app-container'>
