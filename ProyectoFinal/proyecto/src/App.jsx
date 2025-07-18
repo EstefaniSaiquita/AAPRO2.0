@@ -28,17 +28,16 @@ const App = () => {
   const agregarProducto = (nuevo) => {
   const id = productos.length + 1;
   setProductos([...productos, { ...nuevo, id }]);
-  // setProductos(nuevo);
-  // localStorage.setIten("productos", JSON.stringify(nuevo))
+
   };
   
 
   return (
     <div className='app-container'>
 
-      <div className='nav-container'>
+      {/* <div className='nav-container'> */}
       <Nav></Nav>
-      </div>
+      {/* </div> */}
 
       <div className='barra'>
       <Favoritos favoritos={favoritos}/>
